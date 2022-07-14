@@ -1,0 +1,238 @@
+.students {
+  display: flex;
+  flex-direction: column;
+  &_none {
+    display: none;
+  }
+  &_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+  }
+
+  &_tittle {
+    color: rgba(91, 91, 91, 1);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    margin: 0 0 0 40px;
+    text-transform: uppercase;
+  }
+  &_cursor {
+    cursor: pointer;
+  }
+  &_search {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    width: 499px;
+    height: 32px;
+    left: calc(50% - 499px / 2 + 0.5px);
+    top: calc(50% - 32px / 2);
+
+    /* Bg */
+    color: #c0c0c0;
+    background: #f2f2f2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* identical to box height, or 20px */
+    &_input {
+      margin: 0 0 0 15px;
+      text-transform: uppercase;
+      width: 400px;
+      border: none;
+      font-size: 14px;
+      line-height: 140%;
+      height: 32px;
+      background: #f2f2f2;
+      &::placeholder {
+        width: 400px;
+        border: none;
+        font-size: 14px;
+        line-height: 140%;
+        height: 32px;
+        color: #c0c0c0
+      }
+      &:focus{
+        border: none;
+        outline: none;
+        text-decoration: none;
+      }
+    }
+  }
+  &_export {
+    text-decoration: none;
+    margin: 0 173px 0 0;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    /* identical to box height, or 17px */
+
+    text-transform: uppercase;
+
+    /* New Gray */
+
+    color: #c0c0c0;
+  }
+  &_cancel {
+    z-index: 2;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+  &_selected {
+    background-color: #c0c0c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding: 0 40px;
+    &_tittle {
+      
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 140%;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    &_cancel {
+      margin: 0 20px 0 0;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 140%;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    &_items {
+      display: flex;
+    }
+    &_export {
+      text-decoration: none;
+      margin: 0 20px 0 0;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 140%;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    &_archive {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 140%;
+      text-transform: uppercase;
+      color: #424242;
+    }
+  }
+}
+
+// ===========================
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  /* Gray Mid */
+
+  color: #777777;
+  border: none;
+  opacity: 0.8;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+th {
+  border: none;
+}
+tr {
+  height: 48px;
+}
+.table {
+  &_parents {
+    float: right;
+  }
+}
+.open {
+  transform: rotate(180deg);
+}
+.pagination {
+  margin: 15px auto;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  /* Gray Dark */
+
+  color: #5b5b5b;
+  &_arrow {
+    margin: 0 15px;
+    transform: rotate(180deg);
+  }
+}
+.table {
+  &_name {
+    width: 350px;
+  }
+  &_id {
+    width: 120px;
+  }
+  &_class {
+    width: 60px;
+  }
+  &_score {
+    width: 110px;
+  }
+  &_speed {
+    width: 150px;
+  }
+  &_parents {
+  }
+  &_uparrow {
+    margin: 0 0 0 20px;
+  }
+  &_select {
+    border: none;
+  }
+}
+.custom-select {
+  margin: 0 15px;
+  border:none;
+  outline:none;
+
+}
+select#xyz {
+  border:none;
+  outline:none;
+}
+select#xyz option {
+  border: none;
+}
+// .select-selected:after {
+//   position: absolute;
+//   content: '';
+//   top: 14px;
+//   right: 10px;
+//   width: 0;
+//   height: 0;
+//   border: 6px solid transparent;
+//   border-color: #fff transparent transparent transparent;
+// }

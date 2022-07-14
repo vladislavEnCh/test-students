@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  text-transform: uppercase;
+  color: #777777;
+  font-size: 14px;
+  line-height: 140%;
+  align-items: center;
+  height: 60px;
+  &_menu {
+    display: flex;
+    margin: 0 280px 0 54px;
+  }
+  &_item {
+    margin: 0 40px;
+  }
+  &_profile {
+  }
+  &_active {
+    background-color: rgba(166, 25, 46, 1);
+    color: #fff;
+   
+    padding: 6px 12px;
+  }
+  &_school {
+  }
+}

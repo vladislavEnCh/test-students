@@ -1,0 +1,19 @@
+.toolbar {
+  font-size: 12px;
+  line-height: 140%;
+
+  text-transform: uppercase;
+  height: 40px;
+  background-color: rgba(91, 91, 91, 1);
+    display: flex;
+    align-items: center;
+  color: #c0c0c0;
+  justify-content: center;
+
+  &_menu {
+    display: flex;
+  }
+  &_item {
+    margin: 0 42px;
+  }
+}

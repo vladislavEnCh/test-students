@@ -1,0 +1,29 @@
+.row{
+    position: relative;
+    width: 100%;
+    &_name{
+        
+        &_name{
+            margin: 0 0 0 10px;
+        }
+    }
+    &_id{
+    }
+    &_class{
+    }
+}
+// .div{
+//     width: 100%;
+// }
+.red{
+    color: red;
+}
+.yellow{
+    color: rgba(226, 181, 52, 1);
+}
+.blue{
+    color: blue;
+}
+.green{
+    color: rgba(15, 157, 88, 1);
+}
