@@ -11,6 +11,25 @@
     }
     &_class{
     }
+    &_parents{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_box{
+        display: flex;
+        margin: 0 20px 0 0;
+        &_item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+            width: 32px;
+            height: 32px;
+            background: #F2F2F2;
+        }
+    }
+    &_span{
+    }
 }
 // .div{
 //     width: 100%;

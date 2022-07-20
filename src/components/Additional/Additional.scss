@@ -1,6 +1,6 @@
 .test {
   min-width: 1440px;
-    background-color: #F2F2F2;
+  background-color: #f2f2f2;
   &_container {
     margin: 20px 0 0 60px;
   }
@@ -55,6 +55,21 @@
       /* Gray Dark */
 
       color: #5b5b5b;
+      &_date {
+        width: 200px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #c0c0c0;
+      }
+    }
+    &_date {
+      border: none;
+      text-decoration: none;
+      &:focus {
+        border: none;
+      }
     }
   }
   &_line {
@@ -77,38 +92,38 @@
     /* Gray Mid */
 
     color: #777777;
-  
+
     &_blue {
-        margin: 0 12px 0 0;
-        &::before{
-            content: ' \25CF';
-            font-size: 15px;
-        }
-        color: #4285F4;
+      margin: 0 12px 0 0;
+      &::before {
+        content: ' \25CF';
+        font-size: 15px;
+      }
+      color: #4285f4;
     }
     &_red {
-        margin: 0 12px 0 0;
-        &::before{
-            content: ' \25CF';
-            font-size: 15px;
-        }
-        color: #DB4437;
+      margin: 0 12px 0 0;
+      &::before {
+        content: ' \25CF';
+        font-size: 15px;
+      }
+      color: #db4437;
     }
     &_green {
-        margin: 0 12px 0 0;
-        &::before{
-            content: ' \25CF';
-            font-size: 15px;
-        }
-        color: #0F9D58;
+      margin: 0 12px 0 0;
+      &::before {
+        content: ' \25CF';
+        font-size: 15px;
+      }
+      color: #0f9d58;
     }
     &_yelow {
-        margin: 0 12px 0 0;
-        &::before{
-            content: ' \25CF';
-            font-size: 15px;
-        }
-        color: #E2B534;
+      margin: 0 12px 0 0;
+      &::before {
+        content: ' \25CF';
+        font-size: 15px;
+      }
+      color: #e2b534;
     }
   }
   &_speed {
@@ -123,40 +138,83 @@
 
     color: #777777;
     &_blue {
-        margin: 0 12px 0 0;
-        &::before{
-            content: ' \25CF';
-            font-size: 15px;
-        }
-        color: #4285F4;
+      margin: 0 12px 0 0;
+      &::before {
+        content: ' \25CF';
+        font-size: 15px;
+      }
+      color: #4285f4;
     }
     &_red {
-        margin: 0 12px 0 0;
-        &::before{
-            content: ' \25CF';
-            font-size: 15px;
-        }
-        color: #DB4437;
+      margin: 0 12px 0 0;
+      &::before {
+        content: ' \25CF';
+        font-size: 15px;
+      }
+      color: #db4437;
     }
     &_green {
-        margin: 0 12px 0 0;
-        &::before{
-            content: ' \25CF';
-            font-size: 15px;
-        }
-        color: #0F9D58;
+      margin: 0 12px 0 0;
+      &::before {
+        content: ' \25CF';
+        font-size: 15px;
+      }
+      color: #0f9d58;
     }
     &_yelow {
-        margin: 0 12px 0 0;
-        &::before{
-            content: ' \25CF';
-            font-size: 15px;
-        }
-        color: #E2B534;
+      margin: 0 12px 0 0;
+      &::before {
+        content: ' \25CF';
+        font-size: 15px;
+      }
+      color: #e2b534;
+    }
+  }
+  &_summary {
+    margin: 20px 0 0 0;
+    padding: 0 0 34px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+
+    &_average {
+      margin: 0 220px 0 30px;
+
+      color: #777777;
+    }
+    &_speed {
+      color: #4285f4;
+    }
+    &_percent {
+      /* identical to box height, or 20px */
+      margin: 0 100px 0 0;
+      color: #4285f4;
     }
   }
 }
-.tr td{
-    border: none ;
-    background-color: #F2F2F2;
+.tr td {
+  border: none;
+  background-color: #f2f2f2;
+}
+.redline {
+  width: 91%;
+  height: 3px;
+  background-color: #a6192e;
+}
+input[type='date']::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type='date']::-webkit-datetime-edit-month-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type='date']::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type='date']::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
 }

@@ -41,7 +41,6 @@
     /* identical to box height, or 20px */
     &_input {
       margin: 0 0 0 15px;
-      text-transform: uppercase;
       width: 400px;
       border: none;
       font-size: 14px;
@@ -54,6 +53,8 @@
         font-size: 14px;
         line-height: 140%;
         height: 32px;
+      text-transform: uppercase;
+
         color: #c0c0c0
       }
       &:focus{

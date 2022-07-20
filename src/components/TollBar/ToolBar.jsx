@@ -18,7 +18,7 @@ function ToolBar() {
         {items.map((item) => (
           <div key={item} className="toolbar_item">
             {item}
-            <img src={rect} alt="" />
+            <img className="icon_pading_left" src={rect} alt="" />
           </div>
         ))}
         <div className="toolbar_item">

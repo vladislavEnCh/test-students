@@ -14,6 +14,8 @@
     margin: 0 40px;
   }
   &_profile {
+    display: flex;
+    margin: 0 40px 0 0;
   }
   &_active {
     background-color: rgba(166, 25, 46, 1);
@@ -22,5 +24,6 @@
     padding: 6px 12px;
   }
   &_school {
+    display: flex;
   }
 }

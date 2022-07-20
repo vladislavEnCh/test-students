@@ -25,6 +25,7 @@ function Students() {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState('');
   const [sort, setSort] = useState('');
+  const [dir, setDir] = useState(1);
   const [selecterStudents, setSelecterStudents] = useState();
   const [clearChild, setClearChild] = useState(false);
 
@@ -32,10 +33,10 @@ function Students() {
   const data = useSelector((state) => state.students);
 
   useEffect(() => {
-    getData(page, selectedOption, search, sort).then((data) => {
+    getData(page, selectedOption, search, sort, dir).then((data) => {
       setItems(data.data);
     });
-  }, [selectedOption, page, search, sort]);
+  }, [selectedOption, page, search, sort, dir]);
   useEffect(() => {
     setSelecterStudents(data);
   }, [data]);
@@ -48,22 +49,31 @@ function Students() {
   const selectHandler = (e) => {
     setSelectedOption(e.target.value);
   };
-
+  const dirSet = (sortName) => {
+    if (sortName === sort && dir === 1) {
+      setDir(-1);
+    } else if (sortName === sort && dir === -1) {
+      setDir(1);
+    } else {
+      setSort(sortName);
+    }
+  };
   const nameHandler = () => {
-    setSort('name');
+    dirSet('name');
   };
   const classHandler = () => {
-    setSort('class');
+    dirSet('class');
   };
   const scoreHandler = () => {
-    setSort('score');
+    dirSet('score');
   };
   const speedHandler = () => {
-    setSort('speed');
+    dirSet('speed');
   };
   const paginationPlusHandler = () => {
-    setPage(page + 1);
+    if (page * selectedOption < 20) setPage(page + 1);
   };
+
   const paginationMinusHandler = () => {
     if (page > 1) setPage(page - 1);
   };

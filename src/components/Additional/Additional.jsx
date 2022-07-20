@@ -32,6 +32,10 @@ function Additional({ item }) {
               All speed
               <img src={rect} alt="" />
             </div>
+            <div className="test_sort_button_date ">
+              Select Period
+              <input className="test_sort_date" type="date" />
+            </div>
           </div>
         </div>
         {/* ================Table================= */}
@@ -88,6 +92,12 @@ function Additional({ item }) {
             ))}
           </tbody>
         </table>
+        <div className="redline"></div>
+        <div className="test_summary">
+          <span className="test_summary_average">Average</span>
+          <span className="test_summary_percent">{item.score}</span>
+          <span className="test_summary_speed">{item.speed}</span>
+        </div>
       </div>
     </div>
   );
